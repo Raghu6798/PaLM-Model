@@ -26,7 +26,7 @@ def initialize_models():
         huggingfacehub_api_token=hf_token_api,
     )
     
-    ASTRA_DB_TOEN = st.secrets["ASTRA_DB_TOKEN"]
+    ASTRA_DB_TOKEN = st.secrets["ASTRA_DB_TOKEN"]
     store = AstraDBGraphVectorStore(
         embedding=hf_embedding,
         token=ASTRA_DB_TOKEN,
